@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>W12BAxios</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/app.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
@@ -21,14 +21,18 @@
             <h2>Activity By # of Participants:</h2>
             <label for="dropdownLst">Select Number of Players</label>
             <select id="dropdownLst"></select>
-            <button id="btn2">FIND ACTIVITY BY PARTICIPANTS</button>
+            <button>FIND ACTIVITY BY PARTICIPANTS</button>
         </div>
     </div>
     <div>
-        <h2>Activity By Price Range</h2>
-        <input type="number">
-        <input type="number">
-        <button>GENERATE RANDOM ACTIVITY</button>
+        <h2>Activity By Price Range (min: $0, maximum: $1)</h2>
+        <input id="min" type="number" placeholder="min">
+        <input id="max" type="number" placeholder="max">
+        <button>FIND ACTIVITY</button>
+        <p>Please enter price within price bounds (min: $0, maximum: $1)</p>
+        <p>Minimum price must be less than maximum price</p>
+        <p>Activity found!</p>
     </div>
+    <div id="test"></div>
 </body>
 </html>
